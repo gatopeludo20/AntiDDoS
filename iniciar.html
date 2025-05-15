@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyect - AntiDDoS</title>
+  <link rel="stylesheet" href="iniciar.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/logo.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Proyect - AntiDDoS</h1>
+    <div>
+      <a class="btn btn-outline-dark" href="info.html">Información del Proyecto</a>
+      <a class="btn btn-outline-dark" href="https://wa.me/51952081293?text=Necesito%20soporte%20en%20AntiDDoS" target="_blank">
+        Contacta al Soporte
+      </a>
+      <a class="btn btn-outline-dark" href="index.html">Inicio</a>
+    </div>
+  </header>
+
+  <hr>
+  <br>
+  <main class="container">
+    <section class="empresa-info" id="empresa-section">
+  <form id="empresa-form" class="empresa-detalles">
+    <h2>Registro de Empresa</h2>
+    <hr><br>
+
+    <label for="nombre">Nombre de la Empresa:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="correo">Correo Electrónico:</label><br>
+<input type="email" id="correo" name="correo" placeholder="usuario@gmail.com" required><br><br>
+
+
+    <label for="plan">Plan Contratado:</label><br>
+    <select id="plan" name="plan" required>
+      <option value="">Selecciona un plan</option>
+      <option value="Protección Básica">Protección Básica</option>
+      <option value="Protección Avanzada">Protección Avanzada</option>
+      <option value="Protección Premium AntiDDoS">Protección Premium AntiDDoS</option>
+    </select><br><br>
+
+    <label for="dominio">IP / Dominio:</label><br>
+    <input type="text" id="dominio" name="dominio" required><br><br>
+
+    <label for="infra">Descripción de la Infraestructura:</label><br>
+    <textarea id="infra" name="infra" rows="4" required></textarea><br><br>
+
+    <button type="submit" class="btn-large">Registrar Empresa</button>
+  </form>
+</section>
+
+<section class="empresa-info" id="empresa-resultado" style="display: none;">
+  <div class="avatar" id="avatar-preview"
+    style="background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png');">
+  </div>
+  <div class="empresa-detalles">
+    <h2 id="nombre-empresa"></h2>
+    <hr><br>
+    <p><strong>Correo:</strong> <span id="correo-empresa"></span></p>
+    <p><strong>Plan:</strong> <span id="plan-empresa"></span></p>
+    <p><strong>IP / Dominio:</strong> <span id="dominio-empresa"></span></p>
+    <p class="infra-desc" id="infra-empresa"></p>
+    <a class="btn-large" href="#" onclick="volverAlFormulario()">Modificar Registro</a>
+  </div>
+</section>
+
+
+    <section class="panel">
+      <hr>
+      <h2>Panel Administrativo</h2>
+      <hr><br><br>
+      <div class="cards">
+        <div class="card">
+          <img src="https://www.slideteam.net/wp/wp-content/uploads/2023/05/Panel-de-informes-de-incidentes-4.png"
+            alt="Panel de Incidencias">
+          <h4>Panel de Incidencias</h4>
+          <p>Monitorea y gestiona todos los incidentes de seguridad detectados en tiempo real.</p>
+        </div>
+        <div class="card">
+          <img src="https://img.site24x7static.com/images/es/netflow-workflow.svg" alt="Tráfico de red IRL">
+          <h4>Tráfico de Red IRL</h4>
+          <p>Visualiza el tráfico actual en tu red para detectar comportamientos anómalos o picos sospechosos.</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    </section>
+  </main>
+
+
+  <section class="footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <p><strong>Contacto</strong></p>
+        <p>Email: soporte@antiddos.com</p>
+        <p>Tel: +34 600 123 456</p>
+        <p>Horario: 24/7</p>
+      </div>
+      <div class="footer-column">
+        <p><strong>Servicios</strong></p>
+        <p>Protección DDoS</p>
+        <p>Infraestructura</p>
+        <p>Asesoramiento</p>
+      </div>
+      <div class="footer-column">
+        <p><strong>Empresa</strong></p>
+        <p>Sobre Nosotros</p>
+        <p>Equipo</p>
+        <p>Blog</p>
+      </div>
+      <div class="footer-column">
+        <p><strong>Legal</strong></p>
+        <p>Política de Privacidad</p>
+        <p>Términos de Uso</p>
+        <p>Cookies</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Proyect - AntiDDoS. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
